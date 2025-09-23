@@ -1,0 +1,36 @@
+Please download the trained YOLO model from this link:
+https://drive.google.com/file/d/1xf08bmbu_x54FGIGdzJ1sznIrLJEYaFy/view?usp=sharing
+
+
+
+
+# Single image
+python yolo_inference.py --model "path/to/your/model.pt" --source "test_image.jpg" --output "results/" --show
+
+# Batch processing
+python yolo_inference.py --model "model.pt" --source "test_images/" --output "results/" --pattern "*.jpg"
+
+# Video processing  
+python yolo_inference.py --model "model.pt" --source "test_video.mp4" --output "results/" --show
+
+# Custom thresholds
+python yolo_inference.py --model "model.pt" --source "image.jpg" --conf 0.3 --iou 0.5 --device "cpu"
+
+
+programmatic usage:
+
+from yolo_inference import BDD100KInference
+
+# Initialize
+inference = BDD100KInference(
+    model_path="path/to/your/trained_model.pt",
+    device="0",
+    conf_threshold=0.25,
+    iou_threshold=0.7
+)
+
+# Process single image
+result = inference.predict_image("test.jpg", save_path="output.jpg", show=True)
+
+# Batch process
+results = inference.predict_batch("images/", "outputs/", "*.jpg")

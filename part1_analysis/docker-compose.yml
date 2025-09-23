@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  bdd100k-analyzer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bdd100k-analysis
+    volumes:
+      # Mount your data directory containing the JSON annotations
+      - ./data:/app/data:ro
+      # Mount your images directory (optional, for sample image copying)
+      - ./images:/app/images:ro
+      # Mount output directory to save results
+      - ./output:/app/output:rw
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Override the default command with your specific arguments
+    command: [
+      "--json_path", "/app/data/bdd100k_labels_images_train.json",
+      "--output_dir", "/app/output",
+      "--images_dir", "/app/images"
+      # Add other arguments as needed:
+      # "--sample_size", "1000",
+      # "--generate_pdf"
+    ]
+    # Uncomment to run interactively
+    # stdin_open: true
+    # tty: true
+
+  # Alternative service for development/debugging
+  bdd100k-analyzer-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bdd100k-analysis-dev
+    volumes:
+      - ./data:/app/data:ro
+      - ./images:/app/images:ro
+      - ./output:/app/output:rw
+      # Mount the script for development
+      - ./analysis_new.py:/app/analysis_new.py:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Run interactively for development
+    stdin_open: true
+    tty: true
+    command: ["bash"]
+    profiles:
+      - dev
