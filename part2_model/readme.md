@@ -275,19 +275,18 @@ Here’s a brief on **YOLO-based models for autonomous-driving object detection*
 ### Training a simple YOLO model from scratch
 
 The idea here is to find a simple YOLO model that is pre-trained on the COCO dataset and use this to train it on the BDD100k dataset from scratch. The reasoning behing this is as follows:
-  - from what we saw earlier, yolo and its variants have proved to be a good choice for real-time inference, which is a desirable properly to have for autonomous driving. Based on the data analysis and insights, i wanted to explore if just by tweaking and adjusting the hyperparams, what would be the baseline metrics and is it comparable to some of the models out there?
-  - also, personal computational constraints on my end - having a single 3060 RTX GPU with 12 gb VRAM means it's harder to train some of the heavier transformer based models from scratch. yolo seems to be a decent choice due to the computational limitations that i have for training. 
-  - Once we get a baseline score, the idea is to try with more variations of hyperparameter tuning and custom architectural changes to YOLO that would help in getting the accuracy up. 
+  - From what we saw earlier, yolo and its variants have proved to be a good choice for real-time inference, which is a desirable properly to have for autonomous driving. Based on the data analysis and insights, i wanted to explore if just by tweaking and adjusting the hyperparams, what would be the baseline metrics and is it comparable to some of the models out there?
+  - Also, personal computational constraints on my end - having a single 3060 RTX GPU with 12 gb VRAM means it's harder to train some of the heavier transformer based models from scratch. YOLO seems to be a decent choice due to the computational limitations that for training. 
+  - Once we get a baseline score, the idea is to try with more variations of hyperparameter tuning and custom architectural changes to YOLO that would help in addressing some of the issues we encounter in data such as detecting small objects, adverse weather conditions, lighting, etc.
 
 
 
 **Training details**: 
-- Trained for 80 epochs on the entire dataset using a single RTX 3060 GPU.
+- Trained so far on ~50 epochs on the entire dataset using a single RTX 3060 GPU so far, and training is still going on with total epochs set to 100. (Model artifacts will be uploaded on the drive as more epochs are completed with the link mentioned below)
 - Used a custom script to convert the bdd100k dataset to yolo format for making the data compatible for training (refer to convert_bdd_yolo.py).
-- For the choice of initial hyperparams that were set, please refer to the train_yolo.py script under yolo_training. 
+- For the choice of initial hyperparams that were set, please refer to the train_yolo.py script under yolo_training, and another inference script to run the model on images/video.
 - Model assets, and other training metrics are present under bdd100k_training/yolo11m_bdd100k2.
-- **Please download the trained YOLO model from this link:** https://drive.google.com/file/d/1xf08bmbu_x54FGIGdzJ1sznIrLJEYaFy/view?usp=sharing
-
+- **Please download the latest trained YOLO model from this link:** https://drive.google.com/file/d/1xf08bmbu_x54FGIGdzJ1sznIrLJEYaFy/view?usp=sharing
 
 
 [1]: https://arxiv.org/abs/2108.11250? "YOLOP: You Only Look Once for Panoptic Driving Perception"
