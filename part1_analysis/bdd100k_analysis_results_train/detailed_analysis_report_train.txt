@@ -1,0 +1,176 @@
+====================================================================================================
+BDD100K OBJECT DETECTION DATASET - DETAILED ANALYSIS REPORT
+====================================================================================================
+
+1. OVERALL STATISTICS
+--------------------------------------------------
+Total Images: 69,863
+Total Detection Objects: 1,286,871
+Average Objects per Image: 18.42 ± 9.62
+
+2. PER-CLASS DETAILED STATISTICS
+--------------------------------------------------
+
+CAR:
+  Total Instances: 713,211 (55.42% of all objects)
+  Images with car: 69,072
+  Average per Image: 10.209
+  Average Size: 74.6 × 58.0 pixels
+  Average Area: 9422.5 px² (median: 1381.9)
+  Occlusion: 483,121 instances (67.7%)
+  Truncation: 66,529 instances (9.3%)
+  Both Occluded & Truncated: 14,646 instances
+  Size Distribution: large:26140 medium:107767 small:268661 tiny:310643 
+
+TRUCK:
+  Total Instances: 29,971 (2.33% of all objects)
+  Images with truck: 18,890
+  Average per Image: 0.429
+  Average Size: 127.6 × 115.1 pixels
+  Average Area: 27771.0 px² (median: 5593.9)
+  Occlusion: 19,634 instances (65.5%)
+  Truncation: 4,558 instances (15.2%)
+  Both Occluded & Truncated: 1,435 instances
+  Size Distribution: large:3502 medium:8484 small:12905 tiny:5080 
+
+BUS:
+  Total Instances: 11,672 (0.91% of all objects)
+  Images with bus: 8,993
+  Average per Image: 0.167
+  Average Size: 145.7 × 127.4 pixels
+  Average Area: 35806.9 px² (median: 6329.9)
+  Occlusion: 7,645 instances (65.5%)
+  Truncation: 2,146 instances (18.4%)
+  Both Occluded & Truncated: 764 instances
+  Size Distribution: large:1714 medium:3277 small:4835 tiny:1846 
+
+TRAIN:
+  Total Instances: 136 (0.01% of all objects)
+  Images with train: 105
+  Average per Image: 0.002
+  Average Size: 267.1 × 83.9 pixels
+  Average Area: 38624.7 px² (median: 4962.9)
+  Occlusion: 80 instances (58.8%)
+  Truncation: 38 instances (27.9%)
+  Both Occluded & Truncated: 28 instances
+  Size Distribution: large:28 medium:30 small:29 tiny:49 
+
+PERSON:
+  Total Instances: 91,349 (7.10% of all objects)
+  Images with person: 22,076
+  Average per Image: 1.308
+  Average Size: 27.7 × 66.7 pixels
+  Average Area: 2945.0 px² (median: 1075.6)
+  Occlusion: 52,996 instances (58.0%)
+  Truncation: 3,183 instances (3.5%)
+  Both Occluded & Truncated: 934 instances
+  Size Distribution: large:252 medium:5098 small:41812 tiny:44187 
+
+RIDER:
+  Total Instances: 4,517 (0.35% of all objects)
+  Images with rider: 3,586
+  Average per Image: 0.065
+  Average Size: 43.5 × 82.5 pixels
+  Average Area: 6314.2 px² (median: 1790.4)
+  Occlusion: 4,028 instances (89.2%)
+  Truncation: 227 instances (5.0%)
+  Both Occluded & Truncated: 177 instances
+  Size Distribution: large:60 medium:652 small:2204 tiny:1601 
+
+BIKE:
+  Total Instances: 7,210 (0.56% of all objects)
+  Images with bike: 4,343
+  Average per Image: 0.103
+  Average Size: 60.6 × 67.4 pixels
+  Average Area: 5925.4 px² (median: 2460.4)
+  Occlusion: 6,043 instances (83.8%)
+  Truncation: 613 instances (8.5%)
+  Both Occluded & Truncated: 352 instances
+  Size Distribution: large:36 medium:1160 small:4199 tiny:1815 
+
+MOTOR:
+  Total Instances: 3,002 (0.23% of all objects)
+  Images with motor: 2,284
+  Average per Image: 0.043
+  Average Size: 67.1 × 68.3 pixels
+  Average Area: 7584.1 px² (median: 2485.5)
+  Occlusion: 2,297 instances (76.5%)
+  Truncation: 272 instances (9.1%)
+  Both Occluded & Truncated: 122 instances
+  Size Distribution: large:50 medium:548 small:1536 tiny:868 
+
+TRAFFIC SIGN:
+  Total Instances: 239,686 (18.63% of all objects)
+  Images with traffic sign: 57,154
+  Average per Image: 3.431
+  Average Size: 32.3 × 25.2 pixels
+  Average Area: 1198.9 px² (median: 444.2)
+  Occlusion: 26,974 instances (11.3%)
+  Truncation: 6,699 instances (2.8%)
+  Both Occluded & Truncated: 536 instances
+  Size Distribution: large:51 medium:3962 small:56103 tiny:179570 
+
+TRAFFIC LIGHT:
+  Total Instances: 186,117 (14.46% of all objects)
+  Images with traffic light: 39,237
+  Average per Image: 2.664
+  Average Size: 15.9 × 25.3 pixels
+  Average Area: 507.4 px² (median: 263.1)
+  Occlusion: 5,911 instances (3.2%)
+  Truncation: 4,923 instances (2.6%)
+  Both Occluded & Truncated: 118 instances
+  Size Distribution: large:16 medium:101 small:21677 tiny:164323 
+
+3. ENVIRONMENTAL DIVERSITY
+--------------------------------------------------
+
+Weather Conditions:
+  clear          :  53.45%
+  overcast       :  12.55%
+  undefined      :  11.62%
+  snowy          :   7.94%
+  rainy          :   7.26%
+  partly cloudy  :   6.99%
+  foggy          :   0.19%
+
+Scene Types:
+  city street    :  62.29%
+  highway        :  24.88%
+  residential    :  11.56%
+  parking lot    :   0.54%
+  undefined      :   0.52%
+  tunnel         :   0.18%
+  gas stations   :   0.04%
+
+Time of Day:
+  daytime        :  52.57%
+  night          :  40.04%
+  dawn/dusk      :   7.20%
+  undefined      :   0.20%
+
+4. CROSS-SCENARIO ANALYSIS
+--------------------------------------------------
+
+Challenging Weather + Time Combinations:
+  Rainy Night                   :  2,208 images
+  Snowy Night                   :  2,249 images
+  Foggy Dawn Dusk               :     15 images
+  Challenging Weather Night     :  4,524 images
+
+City vs Non-City:
+  City Streets: 43,516 images (avg 20.4 objects/image)
+  Non-City: 26,347 images (avg 15.1 objects/image)
+
+Day vs Night:
+  Daytime: 36,728 images (avg 19.9 objects/image)
+  Nighttime: 27,971 images (avg 16.4 objects/image)
+  Dawn/Dusk: 5,027 images
+
+5. OBJECT DISTRIBUTION IN CHALLENGING CONDITIONS
+--------------------------------------------------
+Challenging Conditions (night/bad weather):
+  Images: 38,444
+  Avg Objects: 17.10
+Normal Conditions:
+  Images: 31,419
+  Avg Objects: 20.04

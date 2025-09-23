@@ -1,0 +1,42 @@
+{
+  "largest": [
+    {
+      "image_name": "c2f25682-16a2fc3f.jpg",
+      "area": 185101.98343880774
+    },
+    {
+      "image_name": "c8e01103-8c1b5190.jpg",
+      "area": 139681.29297556228
+    }
+  ],
+  "smallest": [
+    {
+      "image_name": "b1df722f-5bcc3db7.jpg",
+      "area": 44.815338832733794
+    },
+    {
+      "image_name": "b1df722f-5bcc3db7.jpg",
+      "area": 47.80300653261015
+    }
+  ],
+  "widest": [
+    {
+      "image_name": "b5ab0e46-8eab4733.jpg",
+      "aspect_ratio": 4.41176489000128
+    },
+    {
+      "image_name": "b5ab0e46-8eab4733.jpg",
+      "aspect_ratio": 3.0754716974180583
+    }
+  ],
+  "tallest": [
+    {
+      "image_name": "c9c31e57-3f228293.jpg",
+      "aspect_ratio": 0.24324322592862535
+    },
+    {
+      "image_name": "b79c1f8d-87a1881a.jpg",
+      "aspect_ratio": 0.2627737185722179
+    }
+  ]
+}

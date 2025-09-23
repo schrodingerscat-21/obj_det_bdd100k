@@ -1,0 +1,8 @@
+scene,dawn/dusk,daytime,night,undefined
+city street,461,3067,2582,2
+gas stations,2,2,3,0
+highway,200,1290,1007,2
+parking lot,2,28,15,4
+residential,111,862,279,1
+tunnel,0,2,3,22
+undefined,2,7,40,4

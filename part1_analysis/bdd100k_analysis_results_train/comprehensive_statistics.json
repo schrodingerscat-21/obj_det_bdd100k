@@ -1,0 +1,576 @@
+{
+  "total_images": 69863,
+  "total_annotations": 1286871,
+  "avg_objects_per_image": 18.4199218470435,
+  "std_objects_per_image": 9.619078090894803,
+  "class_stats": {
+    "car": {
+      "count": 713211,
+      "images_with_class": 69072,
+      "percentage_of_total": 55.42210524598037,
+      "avg_per_image": 10.208708472295779,
+      "avg_width": 74.61667185848648,
+      "avg_height": 58.02200624100441,
+      "avg_area": 9422.474886962873,
+      "median_area": 1381.9170066665401,
+      "std_area": 25003.25722141537,
+      "avg_aspect_ratio": 1.3477271065016476,
+      "occluded_count": 483121,
+      "occluded_ratio": 67.73885988858837,
+      "truncated_count": 66529,
+      "truncated_ratio": 9.32809505181496,
+      "both_occluded_truncated": 14646,
+      "size_distribution": {
+        "tiny": 310643,
+        "small": 268661,
+        "medium": 107767,
+        "large": 26140
+      },
+      "weather_distribution": {
+        "clear": 372733,
+        "overcast": 103827,
+        "undefined": 79964,
+        "partly cloudy": 55728,
+        "snowy": 52104,
+        "rainy": 47681,
+        "foggy": 1174
+      },
+      "scene_distribution": {
+        "city street": 448493,
+        "highway": 158695,
+        "residential": 98101,
+        "parking lot": 4592,
+        "undefined": 2457,
+        "tunnel": 684,
+        "gas stations": 189
+      },
+      "timeofday_distribution": {
+        "daytime": 401271,
+        "night": 255152,
+        "dawn/dusk": 55985,
+        "undefined": 803
+      }
+    },
+    "truck": {
+      "count": 29971,
+      "images_with_class": 18890,
+      "percentage_of_total": 2.328982469882374,
+      "avg_per_image": 0.4289967507836766,
+      "avg_width": 127.58069050422074,
+      "avg_height": 115.1240365292783,
+      "avg_area": 27771.02896405792,
+      "median_area": 5593.884495299518,
+      "std_area": 59088.65535231377,
+      "avg_aspect_ratio": 1.2997225809960085,
+      "occluded_count": 19634,
+      "occluded_ratio": 65.50999299322679,
+      "truncated_count": 4558,
+      "truncated_ratio": 15.208034433285508,
+      "both_occluded_truncated": 1435,
+      "size_distribution": {
+        "small": 12905,
+        "medium": 8484,
+        "tiny": 5080,
+        "large": 3502
+      },
+      "weather_distribution": {
+        "clear": 12533,
+        "overcast": 5285,
+        "undefined": 4107,
+        "partly cloudy": 3166,
+        "snowy": 2679,
+        "rainy": 2171,
+        "foggy": 30
+      },
+      "scene_distribution": {
+        "city street": 20045,
+        "highway": 7588,
+        "residential": 2125,
+        "parking lot": 109,
+        "undefined": 62,
+        "tunnel": 35,
+        "gas stations": 7
+      },
+      "timeofday_distribution": {
+        "daytime": 22325,
+        "night": 5323,
+        "dawn/dusk": 2292,
+        "undefined": 31
+      }
+    },
+    "bus": {
+      "count": 11672,
+      "images_with_class": 8993,
+      "percentage_of_total": 0.9070062189605641,
+      "avg_per_image": 0.16706983668036013,
+      "avg_width": 145.66309447326935,
+      "avg_height": 127.37936233447567,
+      "avg_area": 35806.86379080065,
+      "median_area": 6329.889556424769,
+      "std_area": 73811.25725694008,
+      "avg_aspect_ratio": 1.4261494388924276,
+      "occluded_count": 7645,
+      "occluded_ratio": 65.49862919808088,
+      "truncated_count": 2146,
+      "truncated_ratio": 18.385880740233038,
+      "both_occluded_truncated": 764,
+      "size_distribution": {
+        "small": 4835,
+        "medium": 3277,
+        "tiny": 1846,
+        "large": 1714
+      },
+      "weather_distribution": {
+        "clear": 4842,
+        "overcast": 1939,
+        "undefined": 1871,
+        "partly cloudy": 1082,
+        "snowy": 998,
+        "rainy": 927,
+        "foggy": 13
+      },
+      "scene_distribution": {
+        "city street": 8729,
+        "highway": 2237,
+        "residential": 622,
+        "parking lot": 36,
+        "undefined": 33,
+        "tunnel": 15
+      },
+      "timeofday_distribution": {
+        "daytime": 8410,
+        "night": 2227,
+        "dawn/dusk": 1014,
+        "undefined": 21
+      }
+    },
+    "train": {
+      "count": 136,
+      "images_with_class": 105,
+      "percentage_of_total": 0.010568269857662502,
+      "avg_per_image": 0.0019466670483660878,
+      "avg_width": 267.08336686764704,
+      "avg_height": 83.87230733823529,
+      "avg_area": 38624.71901562403,
+      "median_area": 4962.90340385105,
+      "std_area": 72176.71862129467,
+      "avg_aspect_ratio": 3.732762070259466,
+      "occluded_count": 80,
+      "occluded_ratio": 58.82352941176471,
+      "truncated_count": 38,
+      "truncated_ratio": 27.941176470588236,
+      "both_occluded_truncated": 28,
+      "size_distribution": {
+        "tiny": 49,
+        "medium": 30,
+        "small": 29,
+        "large": 28
+      },
+      "weather_distribution": {
+        "clear": 65,
+        "partly cloudy": 20,
+        "overcast": 18,
+        "snowy": 16,
+        "rainy": 11,
+        "undefined": 6
+      },
+      "scene_distribution": {
+        "city street": 82,
+        "highway": 48,
+        "residential": 6
+      },
+      "timeofday_distribution": {
+        "daytime": 97,
+        "night": 30,
+        "dawn/dusk": 9
+      }
+    },
+    "person": {
+      "count": 91349,
+      "images_with_class": 22076,
+      "percentage_of_total": 7.098535906085381,
+      "avg_per_image": 1.3075447661852482,
+      "avg_width": 27.672265616843095,
+      "avg_height": 66.70915494334913,
+      "avg_area": 2945.0119390202653,
+      "median_area": 1075.568479270897,
+      "std_area": 7617.504764509023,
+      "avg_aspect_ratio": 0.4604831937120513,
+      "occluded_count": 52996,
+      "occluded_ratio": 58.014866063120564,
+      "truncated_count": 3183,
+      "truncated_ratio": 3.4844388006436855,
+      "both_occluded_truncated": 934,
+      "size_distribution": {
+        "tiny": 44187,
+        "small": 41812,
+        "medium": 5098,
+        "large": 252
+      },
+      "weather_distribution": {
+        "clear": 33796,
+        "undefined": 23014,
+        "overcast": 14581,
+        "snowy": 7844,
+        "partly cloudy": 6243,
+        "rainy": 5831,
+        "foggy": 40
+      },
+      "scene_distribution": {
+        "city street": 83817,
+        "residential": 3947,
+        "highway": 3290,
+        "parking lot": 172,
+        "undefined": 85,
+        "gas stations": 24,
+        "tunnel": 14
+      },
+      "timeofday_distribution": {
+        "daytime": 66058,
+        "night": 18898,
+        "dawn/dusk": 6321,
+        "undefined": 72
+      }
+    },
+    "rider": {
+      "count": 4517,
+      "images_with_class": 3586,
+      "percentage_of_total": 0.35100643343427584,
+      "avg_per_image": 0.06465511071668838,
+      "avg_width": 43.502290508080584,
+      "avg_height": 82.53194349324774,
+      "avg_area": 6314.221790684924,
+      "median_area": 1790.4236085900818,
+      "std_area": 14159.282825363953,
+      "avg_aspect_ratio": 0.5817435811742089,
+      "occluded_count": 4028,
+      "occluded_ratio": 89.17423068408236,
+      "truncated_count": 227,
+      "truncated_ratio": 5.02545937569183,
+      "both_occluded_truncated": 177,
+      "size_distribution": {
+        "small": 2204,
+        "tiny": 1601,
+        "medium": 652,
+        "large": 60
+      },
+      "weather_distribution": {
+        "clear": 2048,
+        "undefined": 931,
+        "overcast": 773,
+        "partly cloudy": 362,
+        "snowy": 203,
+        "rainy": 196,
+        "foggy": 4
+      },
+      "scene_distribution": {
+        "city street": 3809,
+        "highway": 375,
+        "residential": 322,
+        "undefined": 4,
+        "parking lot": 4,
+        "tunnel": 3
+      },
+      "timeofday_distribution": {
+        "daytime": 3331,
+        "night": 868,
+        "dawn/dusk": 316,
+        "undefined": 2
+      }
+    },
+    "bike": {
+      "count": 7210,
+      "images_with_class": 4343,
+      "percentage_of_total": 0.5602737181893134,
+      "avg_per_image": 0.10320198101999628,
+      "avg_width": 60.625712850485435,
+      "avg_height": 67.37324977475728,
+      "avg_area": 5925.37547807509,
+      "median_area": 2460.3724714506925,
+      "std_area": 10684.719717966089,
+      "avg_aspect_ratio": 0.9598173237960335,
+      "occluded_count": 6043,
+      "occluded_ratio": 83.81414701803051,
+      "truncated_count": 613,
+      "truncated_ratio": 8.502080443828017,
+      "both_occluded_truncated": 352,
+      "size_distribution": {
+        "small": 4199,
+        "tiny": 1815,
+        "medium": 1160,
+        "large": 36
+      },
+      "weather_distribution": {
+        "clear": 3024,
+        "undefined": 1756,
+        "overcast": 1107,
+        "partly cloudy": 465,
+        "snowy": 465,
+        "rainy": 386,
+        "foggy": 7
+      },
+      "scene_distribution": {
+        "city street": 6399,
+        "residential": 490,
+        "highway": 314,
+        "undefined": 4,
+        "parking lot": 2,
+        "tunnel": 1
+      },
+      "timeofday_distribution": {
+        "daytime": 5207,
+        "night": 1536,
+        "dawn/dusk": 467
+      }
+    },
+    "motor": {
+      "count": 3002,
+      "images_with_class": 2284,
+      "percentage_of_total": 0.2332790155345796,
+      "avg_per_image": 0.04296981234702203,
+      "avg_width": 67.12422638874084,
+      "avg_height": 68.27822273617589,
+      "avg_area": 7584.087413583054,
+      "median_area": 2485.4898998322315,
+      "std_area": 16377.146124308078,
+      "avg_aspect_ratio": 1.0227216709526514,
+      "occluded_count": 2297,
+      "occluded_ratio": 76.51565622918055,
+      "truncated_count": 272,
+      "truncated_ratio": 9.060626249167223,
+      "both_occluded_truncated": 122,
+      "size_distribution": {
+        "small": 1536,
+        "tiny": 868,
+        "medium": 548,
+        "large": 50
+      },
+      "weather_distribution": {
+        "clear": 1569,
+        "undefined": 513,
+        "overcast": 430,
+        "partly cloudy": 261,
+        "rainy": 125,
+        "snowy": 102,
+        "foggy": 2
+      },
+      "scene_distribution": {
+        "city street": 2372,
+        "residential": 347,
+        "highway": 273,
+        "parking lot": 6,
+        "tunnel": 2,
+        "undefined": 2
+      },
+      "timeofday_distribution": {
+        "daytime": 2115,
+        "night": 674,
+        "dawn/dusk": 211,
+        "undefined": 2
+      }
+    },
+    "traffic sign": {
+      "count": 239686,
+      "images_with_class": 57154,
+      "percentage_of_total": 18.625487713997753,
+      "avg_per_image": 3.4308002805490747,
+      "avg_width": 32.27874664105538,
+      "avg_height": 25.20172931011406,
+      "avg_area": 1198.9350833555113,
+      "median_area": 444.23376412521236,
+      "std_area": 4308.835180565727,
+      "avg_aspect_ratio": 1.5055483975591297,
+      "occluded_count": 26974,
+      "occluded_ratio": 11.253890506746327,
+      "truncated_count": 6699,
+      "truncated_ratio": 2.79490666955934,
+      "both_occluded_truncated": 536,
+      "size_distribution": {
+        "tiny": 179570,
+        "small": 56103,
+        "medium": 3962,
+        "large": 51
+      },
+      "weather_distribution": {
+        "clear": 124736,
+        "overcast": 34430,
+        "undefined": 27497,
+        "partly cloudy": 18424,
+        "snowy": 18258,
+        "rainy": 16024,
+        "foggy": 317
+      },
+      "scene_distribution": {
+        "city street": 159035,
+        "highway": 62023,
+        "residential": 17490,
+        "parking lot": 542,
+        "undefined": 471,
+        "tunnel": 87,
+        "gas stations": 38
+      },
+      "timeofday_distribution": {
+        "daytime": 132955,
+        "night": 89366,
+        "dawn/dusk": 17251,
+        "undefined": 114
+      }
+    },
+    "traffic light": {
+      "count": 186117,
+      "images_with_class": 39237,
+      "percentage_of_total": 14.462755008077732,
+      "avg_per_image": 2.6640281694172883,
+      "avg_width": 15.87293256723459,
+      "avg_height": 25.286758358645365,
+      "avg_area": 507.3738372475787,
+      "median_area": 263.11443374400477,
+      "std_area": 1698.1435911998256,
+      "avg_aspect_ratio": 0.714379449850339,
+      "occluded_count": 5911,
+      "occluded_ratio": 3.1759592084548967,
+      "truncated_count": 4923,
+      "truncated_ratio": 2.6451103338222732,
+      "both_occluded_truncated": 118,
+      "size_distribution": {
+        "tiny": 164323,
+        "small": 21677,
+        "medium": 101,
+        "large": 16
+      },
+      "weather_distribution": {
+        "clear": 97976,
+        "overcast": 22629,
+        "undefined": 21236,
+        "snowy": 16790,
+        "rainy": 15980,
+        "partly cloudy": 11233,
+        "foggy": 273
+      },
+      "scene_distribution": {
+        "city street": 156911,
+        "highway": 18912,
+        "residential": 9725,
+        "undefined": 320,
+        "parking lot": 185,
+        "tunnel": 39,
+        "gas stations": 25
+      },
+      "timeofday_distribution": {
+        "daytime": 88866,
+        "night": 84260,
+        "dawn/dusk": 12937,
+        "undefined": 54
+      }
+    }
+  },
+  "cross_scenario_analysis": {
+    "weather_time_combinations": {
+      "clear_dawn/dusk": 2004,
+      "clear_daytime": 12454,
+      "clear_night": 22884,
+      "clear_undefined": 2,
+      "foggy_dawn/dusk": 15,
+      "foggy_daytime": 48,
+      "foggy_night": 67,
+      "overcast_dawn/dusk": 1147,
+      "overcast_daytime": 7551,
+      "overcast_night": 72,
+      "partly cloudy_dawn/dusk": 570,
+      "partly cloudy_daytime": 4262,
+      "partly cloudy_night": 49,
+      "rainy_dawn/dusk": 328,
+      "rainy_daytime": 2522,
+      "rainy_night": 2208,
+      "rainy_undefined": 12,
+      "snowy_dawn/dusk": 436,
+      "snowy_daytime": 2862,
+      "snowy_night": 2249,
+      "snowy_undefined": 2,
+      "undefined_dawn/dusk": 527,
+      "undefined_daytime": 7029,
+      "undefined_night": 442,
+      "undefined_undefined": 121
+    },
+    "scene_time_combinations": {
+      "city street_dawn/dusk": 2950,
+      "city street_daytime": 21811,
+      "city street_night": 18748,
+      "city street_undefined": 7,
+      "gas stations_dawn/dusk": 3,
+      "gas stations_daytime": 17,
+      "gas stations_night": 7,
+      "highway_dawn/dusk": 1439,
+      "highway_daytime": 8905,
+      "highway_night": 7025,
+      "highway_undefined": 10,
+      "parking lot_dawn/dusk": 30,
+      "parking lot_daytime": 228,
+      "parking lot_night": 94,
+      "parking lot_undefined": 25,
+      "residential_dawn/dusk": 599,
+      "residential_daytime": 5658,
+      "residential_night": 1813,
+      "residential_undefined": 4,
+      "tunnel_dawn/dusk": 1,
+      "tunnel_daytime": 32,
+      "tunnel_night": 20,
+      "tunnel_undefined": 76,
+      "undefined_dawn/dusk": 5,
+      "undefined_daytime": 77,
+      "undefined_night": 264,
+      "undefined_undefined": 15
+    },
+    "challenging_scenarios": {
+      "rainy_night": 2208,
+      "snowy_night": 2249,
+      "foggy_dawn_dusk": 15,
+      "challenging_weather_night": 4524
+    },
+    "object_distribution_challenging": {
+      "avg_objects_challenging": 17.09946935802726,
+      "avg_objects_normal": 20.035615391960278,
+      "total_challenging_images": 38444,
+      "total_normal_images": 31419
+    }
+  },
+  "diversity_stats": {
+    "weather_diversity": {
+      "clear": 53.45318695160528,
+      "overcast": 12.553139716301907,
+      "undefined": 11.62131600417961,
+      "snowy": 7.942687831899575,
+      "rainy": 7.257060246482401,
+      "partly cloudy": 6.986530781672702,
+      "foggy": 0.1860784678585231
+    },
+    "scene_diversity": {
+      "city street": 62.28762005639609,
+      "highway": 24.87582840702518,
+      "residential": 11.556904226843965,
+      "parking lot": 0.539627556789717,
+      "undefined": 0.5167255915148219,
+      "tunnel": 0.18464709502884216,
+      "gas stations": 0.03864706640138557
+    },
+    "timeofday_diversity": {
+      "daytime": 52.571461288521824,
+      "night": 40.036929419005766,
+      "dawn/dusk": 7.19551121480612,
+      "undefined": 0.19609807766628973
+    }
+  },
+  "city_analysis": {
+    "city_images": 43516,
+    "non_city_images": 26347,
+    "avg_objects_city": 20.445169592793455,
+    "avg_objects_non_city": 15.07492314115459
+  },
+  "day_night_analysis": {
+    "day_images": 36728,
+    "night_images": 27971,
+    "dawn_dusk_images": 5027,
+    "avg_objects_day": 19.893133304291005,
+    "avg_objects_night": 16.38604268706875
+  }
+}

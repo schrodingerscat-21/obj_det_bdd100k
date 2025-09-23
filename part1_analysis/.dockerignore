@@ -1,0 +1,36 @@
+# Exclude large data directories from Docker build context
+data/
+images/
+output/
+
+# Exclude development files
+*.pyc
+__pycache__/
+.pytest_cache/
+.coverage
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Exclude version control
+.git/
+.gitignore
+
+# Exclude editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Exclude OS files
+.DS_Store
+Thumbs.db
+
+# Exclude logs
+*.log
+
+# Exclude temporary files
+*.tmp
+*.temp
